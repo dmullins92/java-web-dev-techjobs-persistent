@@ -48,7 +48,7 @@ public class HomeController {
 
     @PostMapping("add")
     public String processAddJobForm(@ModelAttribute @Valid Job newJob,
-                                       Errors errors, Model model,
+                                    Errors errors, Model model,
                                     @RequestParam int employerId,
                                     @RequestParam List<Integer> skills) {
 
@@ -84,6 +84,4 @@ public class HomeController {
         }
         return "view";
     }
-
-
 }
