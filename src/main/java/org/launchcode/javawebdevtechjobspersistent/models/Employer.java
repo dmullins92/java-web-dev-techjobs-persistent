@@ -17,7 +17,6 @@ public class Employer extends AbstractEntity {
 	private final List<Job> jobs = new ArrayList<>();
 
 	public Employer(String location) {
-		super();
 		this.location = location;
 	}
 
